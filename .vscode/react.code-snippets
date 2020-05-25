@@ -1,0 +1,67 @@
+{
+	"Import React": {
+		"prefix": "react-import",
+		"body": [
+			"import * as React from 'react';"
+		],
+	},
+	"Import module": {
+		"prefix": "css-module-import",
+		"body": [
+			"import styles from './${TM_FILENAME_BASE}.module.css';"
+		],
+	},
+	"Import module2": {
+		"prefix": "css-module-import2",
+		"body": [
+			"import styles from './${test}.module.css';"
+		],
+	},
+	"New Module": {
+		"prefix": "new-redux-module-file",
+		"body": [
+			"// @flow strict",
+			"",
+			"////////////////////////////////////////////////////////////////////////////////",
+			"// CONFIDENTIAL - FORD MOTOR COMPANY",
+			"//",
+			"// This is an unpublished work, which is a trade secret, created in",
+			"// 2020. Ford Motor Company owns all rights to this work and intends",
+			"// to maintain it in confidence to preserve its trade secret status.",
+			"// Ford Motor Company reserves the right to protect this work as an",
+			"// unpublished copyrighted work in the event of an inadvertent or",
+			"// deliberate unauthorized publication. Ford Motor Company also",
+			"// reserves its rights under the copyright laws to protect this work",
+			"// as a published work. Those having access to this work may not copy",
+			"// it, use it, or disclose the information contained in it without",
+			"// the written authorization of Ford Motor Company.",
+			"////////////////////////////////////////////////////////////////////////////////",
+			"",
+			"// VENDOR imports",
+			"import uuidv4 from 'uuid/v4';",
+			"// VENDOR type imports",
+			"import type { Module } from 'redux-dynamic-modules';",
+			"// imports",
+			"import { ${1:reducer} } from './reducer';",
+			"",
+			"const ${2:MODULE}_MODULE_ID = `com.ford.sdk__userModule-${uuidv4()}`;",
+			"// The value must be cast to a string literal. If the value is not cast, the",
+			"// type of the constant will be 'string' - must be 'string literal'",
+			"const ${2}_REDUCER_KEY: 'com.ford.${4:name}' = 'com.ford.${4}';",
+			"",
+			"function get${3:Module}Module(): Module {",
+			"  return {",
+			"    id: ${2}_MODULE_ID,",
+			"    reducerMap: {",
+			"      [${2}_REDUCER_KEY]: ${1},",
+			"    },",
+			"  };",
+			"}",
+			"",
+			"// use named exports - avoid default exports",
+			"// all exports at bottom of file",
+			"export { ${2}_REDUCER_KEY, get${3:Module}Module };",
+			"${}"
+		]
+	}
+}

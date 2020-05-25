@@ -1,0 +1,10 @@
+{
+	"test": {
+		"prefix": "it",
+		"body": [
+			"it('Should ${doSomething}', () => {",
+			"  ${0}",
+			"});"
+		]
+	}
+}

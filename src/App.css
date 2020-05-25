@@ -1,0 +1,45 @@
+html,
+.App {
+  text-align: center;  
+}
+
+html, 
+body,
+.App,
+#root {
+  height: 100%;
+  background: #222;
+}
+
+.CodeMirror {
+  text-align: left;
+}
+
+.bodyRow {
+  min-height: calc(85% - 15pt);
+  margin:auto;
+}
+
+.App {
+  overflow: auto;
+}
+
+.prefixRow {
+  height: calc(10%);
+  margin-top: 15pt;
+  margin-bottom: 15pt;
+}
+
+.prefixRow input {
+  width: 98%;
+  height: 50%;
+  margin: auto;
+}
+
+.row .cell {
+  margin-left: 15pt;
+}
+
+.row .cell:last-child {
+  margin-right: 15pt;
+}
