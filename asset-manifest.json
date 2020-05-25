@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b7423ea.chunk.css",
-    "main.js": "/static/js/main.85b8d57e.chunk.js",
-    "main.js.map": "/static/js/main.85b8d57e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e584c015.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e584c015.js.map",
-    "static/js/2.ab53242b.chunk.js": "/static/js/2.ab53242b.chunk.js",
-    "static/js/2.ab53242b.chunk.js.map": "/static/js/2.ab53242b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2b58157f4774fea109113055263b6860.js": "/precache-manifest.2b58157f4774fea109113055263b6860.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.0b7423ea.chunk.css.map": "/static/css/main.0b7423ea.chunk.css.map",
-    "static/js/2.ab53242b.chunk.js.LICENSE.txt": "/static/js/2.ab53242b.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/CodeSnippetGenerator/static/css/main.fe5c04db.chunk.css",
+    "main.js": "/CodeSnippetGenerator/static/js/main.c136d7c0.chunk.js",
+    "main.js.map": "/CodeSnippetGenerator/static/js/main.c136d7c0.chunk.js.map",
+    "runtime-main.js": "/CodeSnippetGenerator/static/js/runtime-main.b3d8dfeb.js",
+    "runtime-main.js.map": "/CodeSnippetGenerator/static/js/runtime-main.b3d8dfeb.js.map",
+    "static/css/2.c48a41c7.chunk.css": "/CodeSnippetGenerator/static/css/2.c48a41c7.chunk.css",
+    "static/js/2.2de8a96f.chunk.js": "/CodeSnippetGenerator/static/js/2.2de8a96f.chunk.js",
+    "static/js/2.2de8a96f.chunk.js.map": "/CodeSnippetGenerator/static/js/2.2de8a96f.chunk.js.map",
+    "index.html": "/CodeSnippetGenerator/index.html",
+    "precache-manifest.dc1809283368629a456a07eed2b5c471.js": "/CodeSnippetGenerator/precache-manifest.dc1809283368629a456a07eed2b5c471.js",
+    "service-worker.js": "/CodeSnippetGenerator/service-worker.js",
+    "static/css/2.c48a41c7.chunk.css.map": "/CodeSnippetGenerator/static/css/2.c48a41c7.chunk.css.map",
+    "static/css/main.fe5c04db.chunk.css.map": "/CodeSnippetGenerator/static/css/main.fe5c04db.chunk.css.map",
+    "static/js/2.2de8a96f.chunk.js.LICENSE.txt": "/CodeSnippetGenerator/static/js/2.2de8a96f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e584c015.js",
-    "static/js/2.ab53242b.chunk.js",
-    "static/css/main.0b7423ea.chunk.css",
-    "static/js/main.85b8d57e.chunk.js"
+    "static/js/runtime-main.b3d8dfeb.js",
+    "static/css/2.c48a41c7.chunk.css",
+    "static/js/2.2de8a96f.chunk.js",
+    "static/css/main.fe5c04db.chunk.css",
+    "static/js/main.c136d7c0.chunk.js"
   ]
 }
