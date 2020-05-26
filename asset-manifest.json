@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/CodeSnippetGenerator/static/css/main.fe5c04db.chunk.css",
-    "main.js": "/CodeSnippetGenerator/static/js/main.c136d7c0.chunk.js",
-    "main.js.map": "/CodeSnippetGenerator/static/js/main.c136d7c0.chunk.js.map",
+    "main.css": "/CodeSnippetGenerator/static/css/main.8ea09576.chunk.css",
+    "main.js": "/CodeSnippetGenerator/static/js/main.1f0e33df.chunk.js",
+    "main.js.map": "/CodeSnippetGenerator/static/js/main.1f0e33df.chunk.js.map",
     "runtime-main.js": "/CodeSnippetGenerator/static/js/runtime-main.b3d8dfeb.js",
     "runtime-main.js.map": "/CodeSnippetGenerator/static/js/runtime-main.b3d8dfeb.js.map",
     "static/css/2.c48a41c7.chunk.css": "/CodeSnippetGenerator/static/css/2.c48a41c7.chunk.css",
-    "static/js/2.2de8a96f.chunk.js": "/CodeSnippetGenerator/static/js/2.2de8a96f.chunk.js",
-    "static/js/2.2de8a96f.chunk.js.map": "/CodeSnippetGenerator/static/js/2.2de8a96f.chunk.js.map",
+    "static/js/2.1f9c20ea.chunk.js": "/CodeSnippetGenerator/static/js/2.1f9c20ea.chunk.js",
+    "static/js/2.1f9c20ea.chunk.js.map": "/CodeSnippetGenerator/static/js/2.1f9c20ea.chunk.js.map",
     "index.html": "/CodeSnippetGenerator/index.html",
-    "precache-manifest.f7ce849367fcb6640cdc403ff8f022df.js": "/CodeSnippetGenerator/precache-manifest.f7ce849367fcb6640cdc403ff8f022df.js",
+    "precache-manifest.fe00c848807b3bf1458e6710a660bdc7.js": "/CodeSnippetGenerator/precache-manifest.fe00c848807b3bf1458e6710a660bdc7.js",
     "service-worker.js": "/CodeSnippetGenerator/service-worker.js",
     "static/css/2.c48a41c7.chunk.css.map": "/CodeSnippetGenerator/static/css/2.c48a41c7.chunk.css.map",
-    "static/css/main.fe5c04db.chunk.css.map": "/CodeSnippetGenerator/static/css/main.fe5c04db.chunk.css.map",
-    "static/js/2.2de8a96f.chunk.js.LICENSE.txt": "/CodeSnippetGenerator/static/js/2.2de8a96f.chunk.js.LICENSE.txt"
+    "static/css/main.8ea09576.chunk.css.map": "/CodeSnippetGenerator/static/css/main.8ea09576.chunk.css.map",
+    "static/js/2.1f9c20ea.chunk.js.LICENSE.txt": "/CodeSnippetGenerator/static/js/2.1f9c20ea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b3d8dfeb.js",
     "static/css/2.c48a41c7.chunk.css",
-    "static/js/2.2de8a96f.chunk.js",
-    "static/css/main.fe5c04db.chunk.css",
-    "static/js/main.c136d7c0.chunk.js"
+    "static/js/2.1f9c20ea.chunk.js",
+    "static/css/main.8ea09576.chunk.css",
+    "static/js/main.1f0e33df.chunk.js"
   ]
 }
