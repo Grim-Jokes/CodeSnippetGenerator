@@ -1,9 +1,0 @@
-.cell {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
-    background-color: #282a36 ;
-    position: relative;
-}
-

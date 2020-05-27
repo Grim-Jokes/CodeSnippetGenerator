@@ -4,6 +4,7 @@ import { InputPanel } from './components/InputPanel';
 import { OutputPanel } from './components/OutputPanel';
 import { Row } from './components/Row';
 import { Cell } from './components/Cell';
+import { ConfigPanel } from './components/ConfigPanel';
 
 
 type State = {
@@ -14,7 +15,7 @@ type State = {
 
 class App extends React.PureComponent<{}, State> {
 
-  state = { text: '', prefix: '', selection: '' };
+  state = { text: 'class DoubleClickMe {\n  ${0}\n}\nexport { DoubleClickMe };', prefix: '', selection: '' };
 
   onTextChange = (text: string) => {
     this.setState({
@@ -28,7 +29,7 @@ class App extends React.PureComponent<{}, State> {
     });
   }
 
-  onSelection  = (selection: string) => {
+  onSelection = (selection: string) => {
     this.setState({
       selection
     })
@@ -42,9 +43,12 @@ class App extends React.PureComponent<{}, State> {
             <input placeholder="Use comma to add multiple prefixes" onChange={this.onPrefixChange} />
           </Cell>
         </Row>
-        <Row className="bodyRow">
+        <Row className="contentRow">
+          <Cell className={`config-cell`}>
+            <ConfigPanel selection={this.state.selection} />
+          </Cell>
           <Cell>
-            <InputPanel onSelection={this.onSelection} onTextChange={this.onTextChange} />
+            <InputPanel value={this.state.text} onSelection={this.onSelection} onTextChange={this.onTextChange} />
           </Cell>
           <Cell>
             <OutputPanel selection={this.state.selection} prefix={this.state.prefix} text={this.state.text} />

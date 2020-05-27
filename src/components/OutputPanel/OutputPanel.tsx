@@ -4,7 +4,6 @@ import { Line } from '../Line';
 import { Space } from '../Space';
 
 import styles from './OutputPanel.module.css';
-import { throws } from 'assert';
 
 type Props = {
     text: string
@@ -18,17 +17,6 @@ function toLine(entry: string, index: number, entries: string[]) {
     );
 }
 
-function ReplacementPopup(props: any) {
-    if (!props.selection) {
-        return null;  
-    }
-
-    return <div>
-        <div>{props.selection}
-        </div>
-        <button>Tabstop</button>
-    </div>
-}
 
 export function OutputPanel(props: Props) {
     let bodyLines: string[] = [];
@@ -42,11 +30,8 @@ export function OutputPanel(props: Props) {
         prefixes = props.prefix.split(',');
     }
 
-
-
     return (<>
         <div className={styles.outputPanel}>
-            <ReplacementPopup selection={props.selection} />
             <pre>
                 <code>
                     <br />

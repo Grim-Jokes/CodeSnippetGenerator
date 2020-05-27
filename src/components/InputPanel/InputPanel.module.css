@@ -1,4 +1,6 @@
 .leftPanel {
     width: 100%;
-    height: 100%;;
+    height: calc(100% - 15pt) ;
+    padding-top: 15pt;
+    padding-bottom: 15pt;
 }

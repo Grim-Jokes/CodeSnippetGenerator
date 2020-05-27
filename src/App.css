@@ -9,13 +9,15 @@ body,
 #root {
   height: 100%;
   background: #222;
+  color: #d4d4d4;
 }
 
 .CodeMirror {
   text-align: left;
+  
 }
 
-.bodyRow {
+.contentRow {
   min-height: calc(85% - 15pt);
   margin:auto;
 }
@@ -24,22 +26,52 @@ body,
   overflow: auto;
 }
 
+.row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.row .cell {
+  width: 100%;
+  flex-direction: column;
+  margin-right: 15pt;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #282a36 ;
+  height: 100%;
+}
+
+.contentRow .cell:first-child {
+  margin-left: 15pt;
+}
+.contentRow.cell.last-child {
+  margin-right: 15pt;
+}
+
 .prefixRow {
   height: calc(10%);
   margin-top: 15pt;
   margin-bottom: 15pt;
 }
 
+.prefixRow .cell {
+  width: calc(100% - 30pt);
+  margin: 0 15pt 0 15pt;
+
+  
+}
+
 .prefixRow input {
   width: 98%;
   height: 50%;
-  margin: auto;
+  text-align: left;
+  background-color: #BBC;
+  border: 0;
 }
 
-.row .cell {
-  margin-left: 15pt;
-}
-
-.row .cell:last-child {
-  margin-right: 15pt;
+.row .config-cell {
+  width:33%;
 }

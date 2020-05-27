@@ -20,7 +20,7 @@ function OffsetLine(props: OffsetLineProps) {
     return <div>
         <Space>
             <Space>
-                {props.children}"{comma}
+                "{props.children}"{comma}
             </Space>
         </Space>
     </div>
