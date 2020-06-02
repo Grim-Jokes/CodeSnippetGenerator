@@ -31,3 +31,12 @@
     font-size: 9pt;
     margin: 5pt
 }
+
+.button:hover {
+    background-color: white;
+}
+
+.button:active, 
+.button:focus {
+    background-color: #AAAAFF;
+}

@@ -5,17 +5,24 @@ import { OutputPanel } from './components/OutputPanel';
 import { Row } from './components/Row';
 import { Cell } from './components/Cell';
 import { ConfigPanel } from './components/ConfigPanel';
+import { TabStopOption } from './types';
 
 
 type State = {
   text: string;
   prefix: string;
-  selection: string;
+  selection: string | null;
+  tabStopCount: number;
 }
 
 class App extends React.PureComponent<{}, State> {
 
-  state = { text: 'class DoubleClickMe {\n  ${0}\n}\nexport { DoubleClickMe };', prefix: '', selection: '' };
+  state = {
+    text: 'class DoubleClickMe {\n  ${0}\n}\nexport { DoubleClickMe };',
+    prefix: '', selection: '', transformedText: '',
+    tabStopCount: 1,
+  };
+  first = true;
 
   onTextChange = (text: string) => {
     this.setState({
@@ -35,6 +42,53 @@ class App extends React.PureComponent<{}, State> {
     })
   }
 
+  onConfigClick = (option: TabStopOption) => {
+    if (!this.state.selection) {
+      return;
+    }
+
+    switch (option) {
+      case TabStopOption.Tabstop:
+        this.handleTabStop();
+        break;
+      case TabStopOption.Placeholder:
+        this.handlePlaceHolder();
+        break;
+    }
+  }
+
+  private handleTabStop() {
+    const re = new RegExp(this.state.selection, 'g');
+    const { tabStopCount } = this.state;
+    this.setState({
+      text: this.state.text.replace(re, `\${${tabStopCount }}`),
+      selection: null,
+      tabStopCount: tabStopCount + 1
+    });
+  }
+
+  private handlePlaceHolder() {
+    const { tabStopCount } = this.state;
+    const re1 = new RegExp(this.state.selection, 'g');
+    
+    const text = this.state.text.replace(re1, this.replace_by);
+    this.first = true;
+    this.setState({
+      text,
+      selection: null,
+      tabStopCount: tabStopCount + 1
+    });
+  }
+
+  private replace_by = (match: any) => {
+    if (this.first) {
+      this.first = false;
+      return `\${${this.state.tabStopCount}:${match}}`;
+    }
+
+    return `\${${this.state.tabStopCount}}`;
+  }
+
   render() {
     return (
       <div className="App">
@@ -45,7 +99,7 @@ class App extends React.PureComponent<{}, State> {
         </Row>
         <Row className="contentRow">
           <Cell className={`config-cell`}>
-            <ConfigPanel selection={this.state.selection} />
+            <ConfigPanel onClick={this.onConfigClick} selection={this.state.selection} />
           </Cell>
           <Cell>
             <InputPanel value={this.state.text} onSelection={this.onSelection} onTextChange={this.onTextChange} />
